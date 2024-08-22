@@ -1,0 +1,6 @@
+/tmp
+/vendor
+.idea
+.vscode
+.envrc
+.direnv
