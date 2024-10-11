@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/PSTU-TRAINEES-PROJECT/ams-schedule-management/app/cmd"
+	"ams-appointment-management/app/cmd"
 )
 
 func main() {

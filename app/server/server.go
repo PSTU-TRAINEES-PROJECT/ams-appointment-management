@@ -1,9 +1,9 @@
 package server
 
 import (
+	"ams-appointment-management/app/common/logger"
+	"ams-appointment-management/app/config"
 	"context"
-	"github.com/PSTU-TRAINEES-PROJECT/ams-schedule-management/app/common/logger"
-	"github.com/PSTU-TRAINEES-PROJECT/ams-schedule-management/app/config"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"os"

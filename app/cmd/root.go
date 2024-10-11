@@ -1,13 +1,13 @@
 package cmd
 
 import (
-	"github.com/PSTU-TRAINEES-PROJECT/ams-schedule-management/app/common/logger"
-	"github.com/PSTU-TRAINEES-PROJECT/ams-schedule-management/app/config"
+	"ams-appointment-management/app/common/logger"
+	"ams-appointment-management/app/config"
 	"github.com/labstack/echo/v4"
 	"github.com/spf13/cobra"
 	//connections "test/app/conn/db"
-	"github.com/PSTU-TRAINEES-PROJECT/ams-schedule-management/app/routes"
-	"github.com/PSTU-TRAINEES-PROJECT/ams-schedule-management/app/server"
+	"ams-appointment-management/app/routes"
+	"ams-appointment-management/app/server"
 )
 
 var serveCmd = &cobra.Command{
