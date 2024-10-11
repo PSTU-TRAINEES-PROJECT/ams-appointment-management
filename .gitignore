@@ -5,5 +5,3 @@
 .envrc
 .direnv
 .env
-go.mod
-go.sum
