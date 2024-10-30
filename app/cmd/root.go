@@ -36,12 +36,14 @@ func serve(cmd *cobra.Command, args []string) {
 	var framework = echo.New()
 	var pingRoutes = routes.NewPingRoutes(framework)
 	pingRoutes.InitPingRoute()
-	var appointmentRepository = repository.NewAppointmentRepository(db)
 
+	//appointment segment
+	var appointmentRepository = repository.NewAppointmentRepository(db)
 	var appointmentService = service.NewAppointmentService(appointmentRepository)
 	var appointmentController = controller.NewAppointmentController(appointmentService)
+
 	var appointmentRoutes = routes.NewAppointmentRoutes(framework, &appointmentController)
-	appointmentRoutes.InitUserRoute()
+	appointmentRoutes.InitAppointmentRoute()
 
 	var Server = server.New(cfg, framework)
 	Server.Start()

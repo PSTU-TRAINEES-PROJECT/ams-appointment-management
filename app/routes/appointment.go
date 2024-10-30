@@ -18,7 +18,7 @@ func NewAppointmentRoutes(echo *echo.Echo, appointmentController *controller.App
 	}
 }
 
-func (r *AppointmentRoutes) InitUserRoute() {
+func (r *AppointmentRoutes) InitAppointmentRoute() {
 	e := r.echo
 	r.registerUserRoutes(e)
 }
